@@ -1,0 +1,70 @@
+main{
+  background-color: #f7ecde;
+  min-height: 100vh;
+}
+
+main section h1{
+  position: relative;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  z-index: 1;
+  isolation: isolate
+}
+
+main section h1::after{
+  content: '';
+  width: 250px;
+  height: 15px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fec260;
+  z-index: -1;
+  transition: all .5s;
+}
+
+ section h1:hover::after {
+  height: 60%;
+}
+
+main section .icon-heading{
+  position: relative;
+}
+main section .icon-heading h2 , span i{
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+  
+
+main section .icon-heading::after{
+  content: '';
+  border: 1px dotted black;
+  width: 80%;
+  position: absolute;
+bottom: 100%;
+  left: 175px;
+}
+
+
+main .inputs input{
+  margin-top: 10px;
+}
+
+
+.form-control:focus {
+  /* color: var(--bs-body-color); */
+  background-color: none;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+
+
+/* .error{
+  box-shadow: 0 0 0 0.25rem #f80a0aeb;
+} */
